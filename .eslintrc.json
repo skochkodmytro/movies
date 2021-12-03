@@ -1,0 +1,74 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 13,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]} ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": ["error"],
+        "react/jsx-indent" : "off",
+        "indent": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-loop-func": "off",
+        "@typescript-eslint/no-unused-expressions": ["error", {"allowTernary": true}],
+        "import/prefer-default-export": "off",
+        "max-classes-per-file": "off",
+        "no-param-reassign": ["error", { "props": false }],
+        "no-underscore-dangle": "off",
+        "no-unused-expressions": ["error", {"allowTernary": true}],
+        "prefer-object-spread": "warn",
+        "react-hooks/exhaustive-deps": "off",
+        "react/function-component-definition": [
+            2,
+            {
+                "namedComponents": "arrow-function",
+                "unnamedComponents": "arrow-function"
+            }
+        ],
+        "semi": "off",
+        "arrow-body-style": "off",
+        "linebreak-style": "off",
+        "max-len": ["error", { "code": 120 }],
+        "camelcase": "off",
+        "arrow-parens": "off",
+        "default-param-last": "off",
+        "object-curly-newline": "off",
+        "react/jsx-indent-props": "off",
+        "padded-blocks": "off",
+        "react/require-default-props": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
+    }
+}
